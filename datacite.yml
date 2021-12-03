@@ -19,13 +19,13 @@ authors:
 
 
 # A title to describe the published resource.
-title: "UNFCCC country-submitted greenhouse gas emissions data until 2021-06-28"
+title: "UNFCCC country-submitted greenhouse gas emissions data until 2021-12-03"
 
 # Additional information about the resource, e.g., a brief abstract.
 description: |
   Dataset containing all greenhouse gas emissions data submitted
   by countries under climate change convention (CRF data and BUR data)
-  as published by the UNFCCC secretariat at 2021-06-28.
+  as published by the UNFCCC secretariat at 2021-12-03.
 
 # List of keywords the resource should be associated with.
 # Give as many keywords as possible, to make the resource findable.
@@ -51,7 +51,6 @@ rights: |
 
 
 
-# gin doesn't support "IsDerivedFrom" at the moment, so we can't make these references machine-readable atm.
 references:
   -
     reftype: "IsDerivedFrom"
@@ -63,9 +62,9 @@ references:
     reftype: "IsDerivedFrom"
     citation: "The World Bank GDP data, available at https://data.worldbank.org/"
   -
-    id: "doi:10.5281/zenodo.4525036"
+    id: "doi:10.5281/zenodo.5751935"
     reftype: "IsDerivedFrom"
-    citation: "Mika Pflüger & Daniel Huppmann. (2021-02-09). pik-primap/unfccc_di_api: Version 2.0.0. Zenodo. https://doi.org/10.5281/zenodo.4525036"
+    citation: "Mika Pflüger, Daniel Huppmann & Johannes Gütschow. (2021-12-03). pik-primap/unfccc_di_api: Version 3.0.0. Zenodo. https://doi.org/10.5281/zenodo.5751935"
 
 
 # Resource type. Default is Dataset, other possible values are Software, DataPaper, Image, Text.
