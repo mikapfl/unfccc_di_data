@@ -7,6 +7,8 @@ datalad push --to ginhemio --data anything
 
 At home:
 datalad update -s ginhemio
+datalad update
+git pull
 start making new version on zenodo, get pre-reserved doi
 put new doi, new info into datacite.yml and README.md
 datalad save
