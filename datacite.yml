@@ -9,23 +9,23 @@ authors:
   -
     firstname: "Mika"
     lastname: "Pflüger"
-    affiliation: "Potsdam Institute for Climate Impact Research (PIK)"
+    affiliation: "Climate Resource Pty Ltd"
     id: "ORCID:0000-0002-7814-8916"
   -
     firstname: "Johannes"
     lastname: "Gütschow"
-    affiliation: "Potsdam Institute for Climate Impact Research (PIK)"
+    affiliation: "Climate Resource Pty Ltd"
     id: "ORCID:0000-0001-9944-3685"
 
 
 # A title to describe the published resource.
-title: "UNFCCC country-submitted greenhouse gas emissions data until 2022-12-13"
+title: "UNFCCC country-submitted greenhouse gas emissions data until 2023-07-18"
 
 # Additional information about the resource, e.g., a brief abstract.
 description: |
   Dataset containing all greenhouse gas emissions data submitted
   by countries under climate change convention (CRF data and BUR data)
-  as published by the UNFCCC secretariat at 2022-12-13.
+  as published by the UNFCCC secretariat at 2023-07-18.
 
 # List of keywords the resource should be associated with.
 # Give as many keywords as possible, to make the resource findable.

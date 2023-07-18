@@ -1,0 +1,24 @@
+on Azure:
+rm -rf venv
+make venv
+source venv/bin/activate.fish
+datalad rerun …
+datalad push --to ginhemio --data anything
+
+At home:
+datalad update -s ginhemio
+datalad update
+git pull
+start making new version on zenodo, get pre-reserved doi
+put new doi, new info into datacite.yml and README.md
+datalad save
+datalad push
+datalad push --to origin
+datalad push --to ginhemio --data anything
+datalad export-archive -t zip 'data-2022-10-12.zip'
+upload new data to zenodo, publish
+datalad export-to-figshare
+-> edit on figshare, probabaly re-upload zipfile because datalad crashes
+-> publish on figshare
+test on non-cr computer
+new version of unfccc_di_api
