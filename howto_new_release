@@ -16,9 +16,6 @@ datalad push
 datalad push --to origin
 datalad push --to ginhemio --data anything
 datalad export-archive -t zip 'data-2022-10-12.zip'
-upload new data to zenodo, publish
-datalad export-to-figshare
--> edit on figshare, probabaly re-upload zipfile because datalad crashes
--> publish on figshare
-test on non-cr computer
+zip parquet-only.zip data/annexI/*.parquet data/non-annexI/*.parquet
+upload new data (including parquet-only.zip) to zenodo, publish
 new version of unfccc_di_api
