@@ -1,5 +1,5 @@
 on Azure:
-sudo apt install git tmux make python3-venv
+sudo apt install git tmux make python3-venv datalad
 tmux
 git clone https://github.com/mikapfl/unfccc_di_data
 cd unfccc_di_data
