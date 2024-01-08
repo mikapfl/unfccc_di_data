@@ -18,7 +18,12 @@ At home:
 datalad update -s ginhemio --how update
 datalad update
 git pull
-start making new version on zenodo, get pre-reserved doi
+
+if you want to compare differences, get the old and new CSVs, then run (in fish):
+for i in old/*.csv; echo $i; csvdiff --ignore-columns 0 -p 1,2,3,4,5,7 -o word-diff $i  new/$(basename $i) > diff_$(basename $i); end
+you need https://github.com/aswinkarthik/csvdiff for that.
+
+if you are happy, start making new version on zenodo, get pre-reserved doi
 put new doi, new info into datacite.yml and README.md
 datalad save
 datalad push
