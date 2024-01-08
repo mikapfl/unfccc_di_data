@@ -6,6 +6,7 @@ cd unfccc_di_data
 rm -rf venv
 make venv
 source venv/bin/activate.fish (in case you use bash without the '.fish')
+datalad update -s ginhemio --how update
 datalad rerun …
 
 datalad siblings add -s ginhemio --url https://gin.hemio.de/CR/unfcc_di_data --pushurl git@gin.hemio.de/CR/unfcc_di_data
@@ -14,7 +15,7 @@ git config remote.ginhemio.annex-ignore false
 datalad push --to ginhemio --data anything
 
 At home:
-datalad update -s ginhemio
+datalad update -s ginhemio --how update
 datalad update
 git pull
 start making new version on zenodo, get pre-reserved doi
