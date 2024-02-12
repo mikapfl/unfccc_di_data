@@ -33,3 +33,4 @@ datalad export-archive -t zip 'data-2022-10-12.zip'
 zip parquet-only.zip data/annexI/*.parquet data/non-annexI/*.parquet
 upload new data (including parquet-only.zip) to zenodo, publish
 new version of unfccc_di_api
+
