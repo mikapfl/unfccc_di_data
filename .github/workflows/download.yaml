@@ -40,3 +40,5 @@ jobs:
         run: pip install -r unfccc_di_data/requirements.txt
       - name: download data
         run: datalad -C unfccc_di_data/ rerun download
+      - name: publish newly downloaded data
+        run: datalad -C unfccc_di_data/ push --to ginhemio-storage --data anything
