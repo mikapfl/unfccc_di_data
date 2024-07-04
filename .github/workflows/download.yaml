@@ -34,8 +34,8 @@ jobs:
         run: datalad clone https://github.com/mikapfl/unfccc_di_data.git
       - name: configure push access to gin.hemio.de
         run: |
-          datalad -C unfccc_di_data/ siblings add -s ginhemio --url https://gin.hemio.de/CR/unfcc_di_data --pushurl git@gin.hemio.de/CR/unfcc_di_data
           cd unfccc_di_data/
+          datalad siblings add -s ginhemio --url https://gin.hemio.de/CR/unfcc_di_data --pushurl gin.hemio.de:/CR/unfcc_di_data
           git config remote.ginhemio.annex-ignore false
       - name: setup Python
         uses: actions/setup-python@v5
@@ -46,4 +46,7 @@ jobs:
       - name: download data
         run: datalad -C unfccc_di_data/ rerun download
       - name: publish newly downloaded data
-        run: datalad -C unfccc_di_data/ push --to ginhemio --data anything
+        run: |
+          cd unfccc_di_data/
+          datalad siblings
+          datalad -l debug push --to ginhemio --data anything
