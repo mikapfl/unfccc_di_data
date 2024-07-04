@@ -43,6 +43,8 @@ jobs:
           python-version: '3.11'
       - name: install requirements
         run: pip install -r unfccc_di_data/requirements.txt
+      - name: update to latest data from gin.hemio.de
+        run: datalad -C unfccc_di_data/ update -s ginhemio --how merge
       - name: download data
         run: datalad -C unfccc_di_data/ rerun download
       - name: publish newly downloaded data
