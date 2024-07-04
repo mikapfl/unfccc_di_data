@@ -1,8 +1,8 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10470862.svg)](10.5281/zenodo.10470862)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12657469.svg)](10.5281/zenodo.12657469)
 
-Dataset containing all data available from the UNFCCC API at https://di.unfccc.int as of 2024-01-08.
+Dataset containing all data available from the UNFCCC API at https://di.unfccc.int as of 2024-07-04.
 
-Due to the large size of the full dataset, the dataset is shared using [datalad](https://www.datalad.org/) and on [zenodo](https://doi.org/10.5281/zenodo.10470862).
+Due to the large size of the full dataset, the dataset is shared using [datalad](https://www.datalad.org/) and on [zenodo](https://doi.org/10.5281/zenodo.12657469).
 
 To obtain the data using datalad, first clone the repository including metadata:
 ```shell

@@ -1,3 +1,7 @@
 venv/
 data-*.zip
 parquet-only.zip
+.idea/
+data/diff/
+data/old/
+data/new/
