@@ -26,6 +26,10 @@ jobs:
               User git
               IdentityFile ~/.ssh/id_ginhemio
               IdentitiesOnly yes
+      - name: configure git user
+        run: git config --global user.email "mika.pflueger@climate-resource.com"
+      - name: configure git email
+        run: git config --global user.name "Mika Pflüger (via github actions)"
       - name: clone repo
         run: datalad clone https://github.com/mikapfl/unfccc_di_data.git
       - name: setup Python
