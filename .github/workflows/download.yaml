@@ -48,5 +48,5 @@ jobs:
       - name: publish newly downloaded data
         run: |
           cd unfccc_di_data/
-          datalad siblings
+          datalad update -s ginhemio --how merge
           datalad push --to ginhemio --data anything
