@@ -1,0 +1,38 @@
+name: download
+
+on:
+  workflow_dispatch:
+
+jobs:
+  download:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: set download date
+        run: echo "DOWNLOAD_DATE=$(date +"%Y-%m-%d")" >> $GITHUB_ENV
+      - name: install datalad
+        uses: awalsh128/cache-apt-pkgs-action@v1.4.2
+        with:
+          packages: datalad
+          version: 1.0
+      - name: install ssh key for gin.hemio.de access
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.GIN_HEMIO_SSH_KEY }}
+          name: id_ginhemio # optional
+          known_hosts: |
+            gin.hemio.de ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPA+r/S2vn2JmN9z62e/vla/pDgaEfFUmghlOP7idyP9
+          config: |
+            Host gin.hemio.de
+              User git
+              IdentityFile ~/.ssh/id_ginhemio
+              IdentitiesOnly yes
+      - name: clone repo
+        run: datalad clone https://github.com/mikapfl/unfccc_di_data.git
+      - name: setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: install requirements
+        run: pip install -r unfccc_di_data/requirements.txt
+      - name: download data
+        run: datalad -C unfccc_di_data/ rerun download
