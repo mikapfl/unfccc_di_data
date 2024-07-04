@@ -49,4 +49,4 @@ jobs:
         run: |
           cd unfccc_di_data/
           datalad siblings
-          datalad -l debug push --to ginhemio --data anything
+          datalad push --to ginhemio --data anything

@@ -10,8 +10,6 @@ ROOT_DIR = pathlib.Path(os.path.abspath(os.curdir))  # This is your Project Root
 def main():
     r = UNFCCCApiReader()
     for party in tqdm.tqdm(r.parties["code"], desc="parties"):
-        if party != "AUS":
-            continue
         df = r.query(party_code=party, progress=False)
 
         annexI = party in r.annex_one_reader.parties["code"].values
