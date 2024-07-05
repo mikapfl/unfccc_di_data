@@ -48,7 +48,7 @@ jobs:
       - name: update to latest data from gin.hemio.de
         run: datalad -C unfccc_di_data/ update -s ginhemio --how merge
       - name: download data
-        run: datalad -C unfccc_di_data/ rerun download
+        run: datalad -C unfccc_di_data/ run -o data/annexI/*.csv.gz -o data/non-annexI/*.csv.gz -o data/all.parquet python download.py
       - name: publish newly downloaded data
         run: |
           cd unfccc_di_data/

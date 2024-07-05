@@ -1,4 +1,11 @@
 # How to create a new release
+
+New data is automatically downloaded and added to the dataset every month. While this
+is useful for data archeology in the datalad dataset, an official release on
+zenodo is needed so you can cite the data and third parties can easily re-use the data.
+We therefore aim to make a new release whenever relevant changes happened or at least
+twice a year.
+
 ## 1. download and publish new data
 Go to https://github.com/mikapfl/unfccc_di_data/actions/workflows/download.yaml and
 trigger a new run of the "download" workflow. This will download the latest data from
@@ -43,10 +50,9 @@ datalad push
 datalad push --to origin
 datalad push --to ginhemio --data anything
 datalad export-archive -t zip "data-$(date --iso).zip"
-zip parquet-only.zip data/annexI/*.parquet data/non-annexI/*.parquet
 ```
 
-upload the new data (consisting of the data-{date}.zip and parquet-only.zip files) to
+upload the new data (consisting of the data-{date}.zip and data/all.parquet files) to
 zenodo.
 
 ## 4. start using the new version

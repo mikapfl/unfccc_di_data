@@ -3,4 +3,4 @@ pandas
 treelib
 tqdm
 requests
-pyarrow
+fastparquet

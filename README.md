@@ -19,7 +19,7 @@ References:
 All the data included in this dataset is available from the UNFCCC API, which sources the data from:
 * GHG inventory data: UNFCCC: Greenhouse Gas Inventory Data, available at https://unfccc.int/process/transparency-and-reporting/greenhouse-gas-data/what-is-greenhouse-gas-data
 * Population data: UNSD Demographic Statistics, available at http://data.un.org
-* GDP data: The World Bank GDP data, available at https://data.worldbank.org/ and shared by The World Bank under the [CC-BY 4.0 License](https://creativecommons.org/licenses/by/4.0/) and pusuant to their [terms of use](https://data.worldbank.org/summary-terms-of-use).
+* GDP data: The World Bank GDP data, available at https://data.worldbank.org/ and shared by The World Bank under the [CC-BY 4.0 License](https://creativecommons.org/licenses/by/4.0/) and pursuant to their [terms of use](https://data.worldbank.org/summary-terms-of-use).
 
 Included is also a python script `download.py` to download the most recent version of the data from the UNFCCC API, which uses the [unfccc-di-api library](https://pypi.org/project/unfccc-di-api/).
 
