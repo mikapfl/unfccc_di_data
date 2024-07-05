@@ -1,7 +1,9 @@
 name: download
 
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: "37 4 7 * *"  # monthly on the seventh day of the month at 04:37
+  workflow_dispatch:  # if run manually
 
 jobs:
   download:
@@ -18,7 +20,7 @@ jobs:
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.GIN_HEMIO_SSH_KEY }}
-          name: id_ginhemio # optional
+          name: id_ginhemio
           known_hosts: |
             gin.hemio.de ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPA+r/S2vn2JmN9z62e/vla/pDgaEfFUmghlOP7idyP9
           config: |
