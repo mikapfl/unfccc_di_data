@@ -4,3 +4,4 @@ treelib
 tqdm
 requests
 fastparquet
+datacompy

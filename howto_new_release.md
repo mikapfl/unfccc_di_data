@@ -26,16 +26,11 @@ git pull
 to pull all changes.
 
 If you want to compare differences, checkout the base you want to compare against,
-move the CSVs from it to a temporary folder called `old`, then checkout the latest
-state again and copy the CSVs to a temporary folder called `new`.
-Then run (in fish):
-
-```fish
-for i in old/*.csv; echo $i; csvdiff --ignore-columns 0 -p 1,2,3,4,5,7 -o word-diff $i  new/$(basename $i) > diff_$(basename $i); end
-```
-
-you need https://github.com/aswinkarthik/csvdiff for that. Afterwards, you can check
-the `diff_{country}.csv` files for changes.
+move the `all.parquet` file from it to a temporary new name, then checkout the latest
+state again.
+Then you can point the `diff.py` script at the files you just checked out and run it
+to generate HTML files which show the differences between the old and the new state.
+Note that if there are no differences, no HTML files are generated.
 
 ## 3. release a new version of the data package
 
