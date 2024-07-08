@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12664477.svg)](10.5281/zenodo.12664477)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12664477.svg)](https://doi.org/10.5281/zenodo.12664477)
 
 Dataset containing all data available from the UNFCCC API at https://di.unfccc.int as of 2024-07-05.
 
