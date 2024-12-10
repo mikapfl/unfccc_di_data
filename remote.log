@@ -1,4 +1,4 @@
 52b4d8a5-d358-4428-ba3f-a841d1dcfae9 autoenable=true location=https://gin.hemio.de/CR/unfcc_di_data name=ginhemio-storage type=git timestamp=1689682285.291695179s
+b4227c91-6234-4556-98fa-bca6d60e472b autoenable=true bucket=primap-datalad-unfccc-di-data datacenter=US encryption=none host=2aa5172b2bba093c516027d6fa13cdc8.r2.cloudflarestorage.com name=public-r2 port=80 protocol=https publicurl=https://pub-b7507196be704417a31ed00736652802.r2.dev region=auto signature=v4 storageclass=STANDARD type=S3 timestamp=1733844685s
 bba48c2d-a4c2-499a-ac53-4daeb665745b archive-id=af19d4bb-3232-4522-bae8-f442b0a86796 autoenable=true encryption=none externaltype=ora name=origin-storage type=external url=ria+ssh://pik-cluster/p/projects/primap/dlria/ timestamp=1625066606.103778491s
-c04eb54b-4b4e-5755-8436-866b043170fa autoenable=true encryption=none externaltype=datalad-archives name=datalad-archives type=external timestamp=1624894244.001931507s
 c04eb54b-4b4e-5755-8436-866b043170fa autoenable=true encryption=none externaltype=datalad-archives name=datalad-archives type=external timestamp=1689679601.734601791s
