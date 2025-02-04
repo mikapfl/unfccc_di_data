@@ -12,7 +12,7 @@ jobs:
       - name: set download date
         run: echo "DOWNLOAD_DATE=$(date +"%Y-%m-%d")" >> $GITHUB_ENV
       - name: install datalad
-        uses: awalsh128/cache-apt-pkgs-action@v1.4.2
+        uses: awalsh128/cache-apt-pkgs-action@v1.4.3
         with:
           packages: datalad
           version: 1.0
